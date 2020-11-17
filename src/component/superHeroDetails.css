@@ -1,0 +1,30 @@
+.main{
+    height: 100%;
+    width: 100%;
+    color: rgb(10, 10, 10);
+    background-color: rgb(212, 158, 158);
+}
+.main h1{
+    color: rgb(8, 8, 8);
+    font-size: 1.4rem;
+}
+.img img{
+    height: 5%;
+    width: 20%;
+}
+
+@media only screen and (max-width: 500px){
+
+.main{
+    font-size: 0.7rem;
+    line-height: 13px;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.main h1{
+    font-size: 0.9rem;
+}
+
+
+}

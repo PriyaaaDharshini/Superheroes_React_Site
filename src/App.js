@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AntLayout from "./AntLayout";
+import SearchHeroes from "./component/search";
+import Header from "./component/header";
+import Intro from "./component/intro";
+import Footer from "./component/footer";
+import SuperHeroDetails from "./component/superHeroDetails";
+import {BrowserRouter , Switch,Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () =>{
+    return(
+        <BrowserRouter>
+        <div>
+        <Header />
+        <Switch>
+         <Route exact path="/" component={Intro}/>
+         <Route exact path="/superheroes" component={AntLayout}/>
+         <Route exact path="/search" component={SearchHeroes}/>
+         <Route exact path="/superhero/details" component={SuperHeroDetails}/>
+         </Switch>
+         <Footer />
+      </div> 
+      </BrowserRouter>
+    );
+    
 }
-
 export default App;

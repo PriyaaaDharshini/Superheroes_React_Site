@@ -1,0 +1,23 @@
+
+  .ant-layout {
+    height: 100%;
+     }
+  Content{
+      height: 100%;
+      
+      
+  }
+
+  .bgimage{
+   
+    background-position: center;
+    width: 100vw;
+    
+    height: 100vh;
+  }
+  .antheader{
+  
+    background-color: lavenderblush;
+    
+    height: 40vh;
+  }

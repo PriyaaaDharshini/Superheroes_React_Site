@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    background-color: rgb(28, 4, 66);
+    color: white;
+    height: 10vh;
+    position: sticky;
+}
+a{
+    color: white;
+}
+.icon{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 500px){
+.header{
+    height: 30vh;
+    flex-direction: column;
+}
+.icon {
+    display: flex;
+    justify-content: left;
+    width: 25%;
+    margin-left: 35px;
+}
+
+
+}
