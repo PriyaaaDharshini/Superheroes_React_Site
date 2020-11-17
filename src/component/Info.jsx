@@ -14,7 +14,7 @@ export const superheroinfo = createContext();
         .catch((error) => console.log(error));
         console.log(data)
         
-    }, []);
+    });
 
 
   return (<>
